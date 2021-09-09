@@ -14,16 +14,14 @@ function AboutSection() {
         <div className='text_wrapper'>
           <h1 className='title_container'>Hey there!</h1>
           <h3 className='description_container'>
-            My name is Cody Do and I'm a 4th year Computer Science Student at
-            UCLA! I'm a full-stack developer and the internal vice president for
-            the non-profit organization, LA Blueprint, though I'm primarily
-            interested in front-end development. I'm also involved in UCLA's
-            Campus Events Commission and the Theta Tau Professional Engineering
-            Fraternity.
+            My name is Cody Do and I'm a 4th year studying Computer Science at
+            UCLA! I'm a full-stack developer and the Internal Vice President for
+            LA Blueprint, though my current interest lies primarily in front-end
+            development. I'm also involved in UCLA's Campus Events Commission
+            and the Theta Tau Professional Engineering Fraternity.
             <br /> <br />
             In my free time, I enjoy hiking, reading, and music. I'm always down
-            to explore something new! Have a suggestion? Feel free to contact
-            me!
+            to try something new! Have a suggestion? Feel free to contact me!
           </h3>
 
           <div className='contact-container'>
