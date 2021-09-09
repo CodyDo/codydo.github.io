@@ -29,14 +29,14 @@
 .title_container {
   float: top;
   padding-bottom: 5%;
-  font-size: 60px;
+  font-size: 60px; /* 300% */
   color: #242424;
 }
 
 .description_container {
   float: bottom;
   padding-bottom: 5%;
-  font-size: 20px;
+  font-size: 20px; /* 125 % */
   color: #242424;
 }
 
@@ -95,4 +95,141 @@
   background: transparent;
   color: #242424;
   transition: all 0.3s ease-out;
+}
+
+/* Handle small screen stuff  (Vertical)
+This applies when screen (long side) is smaller than 812 pixels 
+AKA iPhones 5 - iPhone X
+*/
+@media only screen and (max-width: 812px) and (orientation: portrait) {
+  .primary_container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .img_container {
+    justify-content: top;
+    max-width: 100%;
+  }
+
+  .text_wrapper {
+    justify-content: bottom;
+    width: 120%;
+  }
+
+  .title_container {
+    float: top;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 275%;
+    color: #242424;
+  }
+
+  .description_container {
+    float: bottom;
+    padding-bottom: 10%;
+    font-size: 113%;
+    color: #242424;
+  }
+
+  .icon-row {
+    width: 80%;
+  }
+
+  .res-btn {
+    width: 50%;
+  }
+
+  .icon-link-wrapper {
+    width: 20%;
+    padding-top: 5%;
+  }
+}
+
+/* Same phones as above but horizontal (long side is 812 pixels or less) */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .img_container {
+    max-width: 50%;
+  }
+
+  .text_wrapper {
+    width: 120%;
+  }
+
+  .title_container {
+    float: top;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 150%;
+    color: #242424;
+  }
+
+  .description_container {
+    float: bottom;
+    padding-bottom: 10%;
+    font-size: 90%;
+    color: #242424;
+  }
+
+  .icon-row {
+    width: 80%;
+  }
+
+  .res-btn {
+    width: 60%;
+  }
+
+  .icon-link-wrapper {
+    width: 20%;
+    padding-top: 5%;
+  }
+}
+
+/*
+Handle iPad (Vertical) where long side is 1000 pixels or more
+*/
+@media only screen and (min-width: 1000px) and (orientation: portrait) {
+  .img_container {
+    justify-content: top;
+    max-width: 45%;
+  }
+
+  .text_wrapper {
+    width: 120%;
+  }
+
+  .title_container {
+    float: top;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 250%;
+    color: #242424;
+  }
+
+  .description_container {
+    float: bottom;
+    padding-bottom: 10%;
+    font-size: 125%;
+    color: #242424;
+  }
+
+  .res-btn {
+    width: 50%;
+  }
+
+  .icon-link-wrapper {
+    width: 23%;
+    padding-top: 5%;
+  }
+}
+
+/* Handle iPad (Horizontal) where long side is 1000 pixels or more */
+@media only screen and (min-width: 1000px) and (orientation: landscape) {
+  .res-btn {
+    width: 50%;
+  }
+
+  .res-btn--large {
+    font-size: 150%;
+  }
 }
