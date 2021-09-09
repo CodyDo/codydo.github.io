@@ -1,0 +1,95 @@
+.about {
+  padding: 4rem;
+  background: #fff;
+}
+
+.primary_container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img_container {
+  justify-content: left;
+  max-width: 40%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.text_wrapper {
+  justify-content: right;
+  padding-left: 8%;
+  width: 100%;
+}
+
+.title_container {
+  float: top;
+  padding-bottom: 5%;
+  font-size: 60px;
+}
+
+.description_container {
+  float: bottom;
+  padding-bottom: 5%;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+  width: 50%;
+}
+
+.icon-link-wrapper {
+  width: 15%;
+}
+
+.icon-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/* Resume Button stuff below */
+:root {
+  --res-priamry: #242424;
+}
+
+.res-btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+.res-btn--outline {
+  background-color: #242424;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--res-priamry);
+  transition: all 0.3s ease-out;
+}
+
+.res-btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.res-btn--large:hover {
+  background: transparent;
+  color: #242424;
+  transition: all 0.3s ease-out;
+}
