@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A work in progression application meant to show who I am and what I've done!
+A work in progress website meant to show who I am and what I've done!
 
 ## Main Branch
 
