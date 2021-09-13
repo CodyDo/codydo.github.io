@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Navbar />
         <Home />
-        <AboutMe />
         <Projects />
+        <AboutMe />
         {/* 
         Old Navigation Set-up (Clicking will route to page, not jump to section)
         <Switch>

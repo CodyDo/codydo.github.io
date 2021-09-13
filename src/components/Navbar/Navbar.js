@@ -64,21 +64,21 @@ function Navbar() {
             <li className='nav-item'>
               <Link
                 smooth
-                to='#aboutMe'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                About Me
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                smooth
                 to='#projects'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Projects
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                smooth
+                to='#aboutMe'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                About Me
               </Link>
             </li>
           </ul>
