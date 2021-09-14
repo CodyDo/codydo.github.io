@@ -37,7 +37,7 @@ function Cards() {
               text='A program using real-world map data that simulates the successful creation and delivery of an online order using A* traversal and a hashmap data structure.'
               label='C++'
               path='https://github.com/CodyDo/CS-32/tree/master/Project%204'
-              title='GooberEats'
+              title='Goober Eats'
             />
             <CardItem
               src='images/rpg-fighter.png'
