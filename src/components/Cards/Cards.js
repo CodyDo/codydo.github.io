@@ -10,7 +10,7 @@ function Cards() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <TitleCard text="projects" />
-          <Fade bottom duration={1300} fraction={0.5}>
+          <Fade bottom duration={1300} fraction={0.2}>
             <ul className="cards__items">
               <CardItem
                 src="images/harmony-project.png"
