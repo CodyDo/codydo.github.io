@@ -1,6 +1,6 @@
 .about {
   padding: 4rem;
-  background: #fff;
+  background: var(--white);
 }
 
 .primary_container {
@@ -15,6 +15,7 @@
 .img_container {
   justify-content: left;
   max-width: 40%;
+  max-height: 30%;
   height: auto;
   overflow: hidden;
   border-radius: 15px;
@@ -29,15 +30,15 @@
 .title_container {
   float: top;
   padding-bottom: 5%;
-  font-size: 60px; /* 300% */
-  color: #242424;
+  font-size: 30px; /* 300% */
+  color: var(--black);
 }
 
 .description_container {
   float: bottom;
   padding-bottom: 5%;
   font-size: 20px; /* 125 % */
-  color: #242424;
+  color: var(--black);
 }
 
 .contact-container {
@@ -64,9 +65,14 @@
   height: auto;
 }
 
+.icon-wrapper:hover {
+  opacity: 60%;
+  transition: all 0.2s ease-out;
+}
+
 /* Resume Button stuff below */
 :root {
-  --res-priamry: #242424;
+  --res-priamry: var(--black);
 }
 
 .res-btn {
@@ -75,12 +81,12 @@
   outline: none;
   border: none;
   cursor: pointer;
-  width: 25%;
+  width: 100%;
 }
 
 .res-btn--outline {
-  background-color: #242424;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
   padding: 8px 20px;
   border: 1px solid var(--res-priamry);
   transition: all 0.3s ease-out;
@@ -93,7 +99,7 @@
 
 .res-btn--large:hover {
   background: transparent;
-  color: #242424;
+  color: var(--black);
   transition: all 0.3s ease-out;
 }
 
@@ -119,17 +125,17 @@ AKA iPhones 5 - iPhone X
 
   .title_container {
     float: top;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    font-size: 275%;
-    color: #242424;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    font-size: 150%;
+    color: var(--black);
   }
 
   .description_container {
     float: bottom;
     padding-bottom: 10%;
-    font-size: 113%;
-    color: #242424;
+    font-size: 110%;
+    color: var(--black);
   }
 
   .icon-row {
@@ -161,14 +167,14 @@ AKA iPhones 5 - iPhone X
     padding-bottom: 5%;
     padding-top: 5%;
     font-size: 150%;
-    color: #242424;
+    color: var(--black);
   }
 
   .description_container {
     float: bottom;
     padding-bottom: 10%;
     font-size: 90%;
-    color: #242424;
+    color: var(--black);
   }
 
   .icon-row {
@@ -188,7 +194,7 @@ AKA iPhones 5 - iPhone X
 /*
 Handle iPad (Vertical) where long side is 1000 pixels or more
 */
-@media only screen and (min-width: 1000px) and (orientation: portrait) {
+@media only screen and (min-height: 1000px) and (orientation: portrait) {
   .img_container {
     justify-content: top;
     max-width: 45%;
@@ -203,14 +209,14 @@ Handle iPad (Vertical) where long side is 1000 pixels or more
     padding-bottom: 5%;
     padding-top: 5%;
     font-size: 250%;
-    color: #242424;
+    color: var(--black);
   }
 
   .description_container {
     float: bottom;
     padding-bottom: 10%;
     font-size: 125%;
-    color: #242424;
+    color: var(--black);
   }
 
   .res-btn {

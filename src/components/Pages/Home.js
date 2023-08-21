@@ -4,7 +4,7 @@ import HeroSection from '../HeroSection';
 
 function Home() {
   return (
-    <div id='home'>
+    <div id="home">
       <HeroSection />
     </div>
   );

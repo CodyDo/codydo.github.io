@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Pages/Home';
 import AboutMe from './components/Pages/AboutMe';
+import Skills from './components/Pages/Skills';
 import Projects from './components/Pages/Projects';
 
 function App() {
@@ -12,15 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Home />
-        <Projects />
         <AboutMe />
-        {/* 
-        Old Navigation Set-up (Clicking will route to page, not jump to section)
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/aboutMe' component={AboutMe} />
-          <Route path='/projects' component={Projects} />
-        </Switch> */}
+        <Skills />
+        <Projects />
       </Router>
     </>
   );

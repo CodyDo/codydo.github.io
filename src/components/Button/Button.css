@@ -1,5 +1,5 @@
 :root {
-  --priamry: #fff;
+  --priamry: var(--white);
 }
 
 .btn {
@@ -12,13 +12,13 @@
 
 .btn--primary {
   background-color: var(--priamry);
-  color: #242424;
+  color: var(--black);
   border: 1px solid var(--priamry);
 }
 
 .btn--outline {
   background-color: transparent;
-  color: #fff;
+  color: var(--white);
   padding: 8px 20px;
   border: 1px solid var(--priamry);
   transition: all 0.3s ease-out;
@@ -36,7 +36,7 @@
 
 .btn-medium:hover,
 .btn--large:hover {
-  background: #fff;
-  color: #242424;
+  background: var(--white);
+  color: var(--black);
   transition: all 0.3s ease-out;
 }
