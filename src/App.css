@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +7,7 @@
   --white: #f5f5f5;
   --black: #1b1d1e; /* Other Options: #161718, #242424 */
   --type-color: #5eeb5b; /* Other Options: #ff5252, #2274a5 */
-  /* font-family: 'PT Sans', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'PT Sans', sans-serif;
 }
 
 .home,
