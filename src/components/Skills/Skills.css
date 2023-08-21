@@ -1,0 +1,77 @@
+.skills-container {
+  padding: 4rem;
+  background: var(--white);
+}
+
+.skills-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.skills-section-title {
+  margin-left: 2%;
+  font-size: 36px;
+  width: 15%;
+  height: 100%;
+  align-self: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60%;
+  justify-content: center;
+}
+
+/* Styling for individual card items*/
+.skill-card {
+  width: max-content;
+  padding: 8px 16px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.skill-icon {
+  font-size: 80px;
+}
+
+.skill-name {
+  font-size: 18px;
+}
+
+/* iPhone vertical */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .skills-section-title {
+    padding-bottom: 3%;
+    margin-right: 10%;
+  }
+  .skill-card {
+    width: max-content;
+    height: 100px;
+  }
+  .skill-icon {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .skills-section-title {
+    padding-bottom: 3%;
+  }
+  .skills-list {
+    max-width: 100%;
+    justify-content: center;
+  }
+  .skills-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

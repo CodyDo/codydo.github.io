@@ -1,0 +1,75 @@
+.titleContainer {
+  --b: 3.5px; /* thickness of the border */
+  --c: var(--black); /* color of the border */
+  --w: 20px; /* width of border */
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+
+  /* Each conic-gradient produces one of the four corners.
+  *  In order: top-left, top-right, bottom-left, bottom-right
+  */
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      0 0 / var(--_p),
+    /* conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+      var(--_p), 
+      conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0
+      100% / var(--_p), */
+      conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
+
+  width: 14%;
+  height: 8vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+/* Handle small screen stuff  (Vertical)
+This applies when screen (long side) is smaller than 900 pixels 
+AKA iPhones 5 - iPhone X
+*/
+@media only screen and (max-width: 850px) and (orientation: portrait) {
+  .titleContainer {
+    width: 75%;
+    margin-bottom: 8%;
+  }
+}
+
+/* Same phones as above but horizontal (long side is 900 pixels or less) */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .titleContainer {
+    height: 12vh;
+    width: 35%;
+    margin-bottom: 6%;
+  }
+}
+
+/*
+  Handle iPad (Vertical) where long side is 1000 pixels or more
+  */
+@media only screen and (min-height: 1000px) and (orientation: portrait) {
+  .titleContainer {
+    width: fit-content + 1;
+    margin-bottom: 10%;
+  }
+}
+
+/* Handle iPad (Horizontal) where long side is 1000 pixels or more */
+@media only screen and (min-width: 1000px) and (orientation: landscape) {
+  .titleContainer {
+    width: 20%;
+    margin-bottom: 6%;
+  }
+}
