@@ -8,7 +8,7 @@ function HeroSection() {
   const { word } = useTypingText(
     [
       'a web developer',
-      'a ucla alumni',
+      'a ucla alumnus',
       'a software engineer',
       'your next hire :)',
     ],
